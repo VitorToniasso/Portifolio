@@ -22,7 +22,7 @@
   color: #7A7A7A;
   margin-bottom: 40px;
 }
-.contato-info {
+.contato-info { 
   font-size: 2.225rem;
   display: grid;
   gap: 32px;
@@ -33,4 +33,34 @@
 a {
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 950px) {
+  .contato-info {
+    font-size: 2rem;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 750px) {
+  .contato-info {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .contato-info {
+    font-size: 1.225rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .contato-info {
+    display: grid;
+    font-size: 1.225rem;
+  }
 }
