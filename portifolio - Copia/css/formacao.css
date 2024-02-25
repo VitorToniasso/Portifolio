@@ -1,0 +1,146 @@
+.formacao {
+  background: #222222;
+  color: white;
+}
+
+.formacao-container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.formacao .subtitulo {
+  color: #000;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  text-align: left;
+  color: #8f8f8f;
+  max-width: 40ch;
+}
+
+.formacao-texto strong {
+  color: #ffff;
+}
+
+.curso-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 6px;
+}
+
+.curso {
+  flex: 1;
+  background: #000;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.curso-inf, .curso-local {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.curso-feito {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.curso::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 25px;
+  background: linear-gradient(#fbc07f, #fbbf7fad);
+  position: absolute;
+  transform: rotate(90deg);
+  top: 44px;
+  left: -4px;
+}
+
+.idiomas {
+  max-width: 1200px;
+  padding: 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  position: relative;
+}
+
+.idiomas h3 {
+  margin-bottom: 20px;
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.idiomas li {
+  color: #ffff;
+  font-size: 1.125rem;
+}
+
+.idiomas::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../arquivos/ling.svg) no-repeat;
+  position: absolute;
+  top: 55px;
+  left: -5px;
+}
+
+@media (max-width: 964px) {
+  .curso::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 25px;
+    background: linear-gradient(#fbc07f, #fbbf7fad);
+    position: absolute;
+    transform: rotate(90deg);
+    top: 60px;
+    left: -4px;
+  }
+}
+
+@media (max-width: 835px) {
+  .curso::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 25px;
+    background: linear-gradient(#fbc07f, #fbbf7fad);
+    position: absolute;
+    transform: rotate(90deg);
+    top: 45px;
+    left: -4px;
+  }
+
+  .curso-lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

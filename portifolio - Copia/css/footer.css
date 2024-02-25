@@ -1,0 +1,36 @@
+.contato {
+  background: #000;
+}
+
+.contato-container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.contato-texto {
+  font-size: 1.225rem;
+  color: #b8b8b8;
+  max-width: 31ch;
+  margin-top: 60px;
+}
+
+.direitos {
+  color: #7A7A7A;
+  margin-bottom: 40px;
+}
+.contato-info {
+  font-size: 2.225rem;
+  display: grid;
+  gap: 32px;
+  color: #fff;
+  margin-top: 60px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

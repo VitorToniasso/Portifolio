@@ -1,0 +1,107 @@
+.intro {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.intro h1 {
+  font-family: 'Fira Sans';
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Decorador do h1 desenvolvedor  */
+.descricao {
+  position: relative;
+}
+.traco::before {
+  content: "";
+  width: 400px;
+  height: 6px;
+  background: url(../arquivos/Rectangle\ 393.svg) no-repeat;
+  position: absolute;
+  bottom: 85px;
+  left: auto;
+}
+
+/* Decorador da imagem */
+
+
+@media (max-width: 1000px) {
+.intro h1 {
+  font-size: 3rem;
+}
+
+.traco::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 4px;
+  position: absolute;
+  bottom: 55px;
+  left: auto;
+  z-index: -1;
+}
+
+@media (max-width: 800px)  {
+  
+}
+
+@media (max-width: 676px) {
+  .traco::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 4px;
+    position: absolute;
+    bottom: 110px;
+    left: auto;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 32px;
+  }
+
+  .traco::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 5px;
+    position: absolute;
+    bottom: 55px;
+    left: auto;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .traco::before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    position: absolute;
+    bottom: 36px;
+    left: auto;
+    z-index: -1;
+  }
+}
